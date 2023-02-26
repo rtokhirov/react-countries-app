@@ -1,0 +1,92 @@
+.main {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 1300px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #F2F2F2;
+}
+
+.form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    padding: 19px 32px;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.search {
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+
+.search:focus {
+    outline: none;
+    border: 0;
+}
+
+.searchBtn {
+    width: 18px;
+    height: 18px;
+}
+
+.select {
+    /* padding: 18px 24px; */
+    padding-right: 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    cursor: pointer;
+    width: 190px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.selectEl {
+    border: 0;
+    outline: none;
+    /* background: #000; */
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.selectEl::-ms-expand {
+    display: none;
+}
+
+.countries {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+    gap: 20px 30px;
+    margin-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .countries {
+        max-width: 400px;
+    }
+}
